@@ -1,0 +1,17 @@
+{
+  "name": "pokerbot-node-template",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodejs index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rodrigo <reyes.rr@gmail.com> (https://github.com/reyesr)",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.10.2",
+    "express": "^4.11.1",
+    "handranker": "^1.0.5"
+  }
+}
