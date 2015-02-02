@@ -75,17 +75,19 @@ Hand.prototype.getNumericBestCard = function() {
     var rank = this.bestHand.playingCards[0].rank;
     var candidate = parseInt(rank, 10);
     if (candidate>0) {
-        return candidate;
+        return candidate - 1;
     }
     switch (rank) {
-        case 'J':
-            return 10;
-        case 'Q':
+        case 'T':
             return 11;
-        case 'K':
+        case 'J':
             return 12;
-        case 'A':
+        case 'Q':
             return 13;
+        case 'K':
+            return 14;
+        case 'A':
+            return 15;
     }
     return undefined;
 };
